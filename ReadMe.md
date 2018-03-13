@@ -1,20 +1,29 @@
-This is a simple docker image that can be used to cross
-compile Qt applications for the Windows plattform. It
-does not much more than building the environment using
-the project at https://github.com/mxe/mxe.git, copying
-the sources of the directory and then invoking
-```qmake``` and ```make```.
+*Based on https://github.com/sba1/qt-win-docker*
 
-To start the compiling process, simply enter
+This is debian-jessie image. It uses [MXE](https://github.com/mxe/mxe) (M Cross Environment) and Qt 5.6 (static) for cross compiling qt-applications.
 
-```
- $ ./build
-```
+### Hot to run?
 
-from the command line. You can test the application on
-Linux using Wine
+1. Pull image:
 
 ```
- $ wine ./helloworld.exe
+docker pull approximatenumber/qt-win-docker:5.6
+```
+or clone repo and build local image:
+
+```
+git clone <this-repo>
+cd qt-win-docker/
+docker build -t qt-win-docker:5.6 ./
 ```
 
+2. Build your Qt-project:
+
+```
+cd <project-dir>
+docker run -it --rm ${PWD}:/src qt-win-docker:5.6 /bin/bash
+cd /src
+qmake -makefile
+make
+exit
+```
