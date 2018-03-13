@@ -1,3 +1,5 @@
+[![](https://dockerbuildbadges.quelltext.eu/status.svg?organization=approximatenumber&repository=qt-win-docker)](https://hub.docker.com/r/approximatenumber/qt-win-docker/builds/)
+https://dockerbuildbadges.quelltext.eu/status.svg?organization=approximatenumber&repository=qt-win-docker
 *Based on https://github.com/sba1/qt-win-docker*
 
 **Use [qt5.6](https://github.com/approximatenumber/qt-win-docker/tree/qt5.6) branch for Qt 5.6 LTS!**
