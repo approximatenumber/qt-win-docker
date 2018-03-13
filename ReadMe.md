@@ -1,6 +1,6 @@
 *Based on https://github.com/sba1/qt-win-docker*
 
-**Use `qt5.6` branch for Qt 5.6 LTS!**
+**Use [qt5.6](https://github.com/approximatenumber/qt-win-docker/tree/qt5.6) branch for Qt 5.6 LTS!**
 
 It uses [MXE](https://github.com/mxe/mxe) (M Cross Environment) and Qt latest (static) for cross compiling qt-applications.
 
