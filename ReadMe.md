@@ -1,5 +1,7 @@
 *Based on https://github.com/sba1/qt-win-docker*
 
+**Use master-branch to build latest image.**
+
 This is debian-jessie image. It uses [MXE](https://github.com/mxe/mxe) (M Cross Environment) and Qt 5.6 (static) for cross compiling qt-applications.
 
 ### Hot to run?
